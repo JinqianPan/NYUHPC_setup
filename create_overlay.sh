@@ -4,7 +4,7 @@
 # Need to change here #
 #######################
 # change to your own netid
-NetID=jp6218
+NetID=PleaseChangeHere
 
 # You can copy and paste in Greene to see available options
 # ls /scratch/work/public/overlay-fs-ext3

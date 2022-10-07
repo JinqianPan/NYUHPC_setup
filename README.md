@@ -2,9 +2,11 @@
 1. Go to your /scratch/NetID/ file and clone this github
 ```
 cd /scratch/NetID/
-
+```
+```
 git clone git@github.com:JinqianPan/NYUHPC_setup.git
-
+```
+```
 cd NYUHPC_setup
 ```
 2. Go to create_overlay.sh (Line 7) change the NetID

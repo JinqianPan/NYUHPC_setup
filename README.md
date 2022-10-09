@@ -1,4 +1,9 @@
-# Easy way to setup NYU HPC in Greene
+# Easy way to setup NYU HPC in Greene 
+**[HPC official guide for terminal](https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene/software/singularity-with-miniconda#h.keuu4ltugboh)**
+
+**[HPC official guide for OOD](https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene/software/open-ondemand-ood-with-condasingularity)**
+
+Here I just write code for terminal version.
 1. Go to your /scratch/NetID/ file and clone this github
 ```
 cd /scratch/NetID/

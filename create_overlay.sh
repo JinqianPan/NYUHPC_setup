@@ -31,6 +31,7 @@ cp -rp /scratch/work/public/overlay-fs-ext3/$BASE_PACKAGES_OVERLAY.gz .
 gunzip $BASE_PACKAGES_OVERLAY.gz
 # Rename BASE_PACKAGES_OVERLAY to overlay-base.ext3
 mv $BASE_PACKAGES_OVERLAY overlay-base.ext3
+BASE_PACKAGES_OVERLAY=overlay-base.ext3
 
 # Open singularity
 singularity exec --overlay $BASE_PACKAGES_OVERLAY:rw \

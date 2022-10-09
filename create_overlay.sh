@@ -40,21 +40,22 @@ singularity exec --overlay $BASE_PACKAGES_OVERLAY:rw \
 # Install miniconda
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh Miniconda3-latest-Linux-x86_64.sh -b -p /ext3/miniconda3
+rm Miniconda3-latest-Linux-x86_64.sh
 
 # move env.sh
-mv $GITHUB_DIRECTORY/env.sh /ext3/
-source /ext3/env.sh
+# mv $GITHUB_DIRECTORY/env.sh ext3/
+# source /ext3/env.sh
 
-# Update and install packages
-conda update -n base conda -y
-conda clean --all --yes
-conda install pip
-conda install ipykernel
+# # Update and install packages
+# conda update -n base conda -y
+# conda clean --all --yes
+# conda install pip
+# conda install ipykernel
 
-# Create envrinment
-conda create --name py39 python=3.9
-conda activate py39
+# # Create envrinment
+# conda create --name py39 python=3.9
+# conda activate py39
 
-pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
-pip3 install jupyter jupyterhub pandas matplotlib scipy scikit-learn scikit-image Pillow
+# pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+# pip3 install jupyter jupyterhub pandas matplotlib scipy scikit-learn scikit-image Pillow
 EOF

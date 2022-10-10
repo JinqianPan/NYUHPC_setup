@@ -34,7 +34,7 @@ singularity exec --overlay overlay-base.ext3:rw /scratch/work/public/singularity
 ```
 vim /ext3/env.sh
 ```
-7. Copy and paste
+7. Copy and paste ("i" for insert mode, after paste enter "esc" and type ":wq" for save file)
 ```
 #!/bin/bash
 
@@ -42,7 +42,7 @@ source /ext3/miniconda3/etc/profile.d/conda.sh
 export PATH=/ext3/miniconda3/bin:$PATH
 export PYTHONPATH=/ext3/miniconda3/bin:$PATH
 ```
-8. Go back to file and run the shell file
+8. Go back to folder and run the shell file
 ```
 cd /scratch/NetID/NYUHPC_setup
 ```

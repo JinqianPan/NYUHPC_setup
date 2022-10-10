@@ -24,3 +24,22 @@ ls /scratch/work/public/overlay-fs-ext3
 ```
 bash create_overlay.sh
 ```
+6. Go to /scratch/NetID/my_env and vim /ext3/env.sh
+```
+cd /scratch/NetID/my_env
+```
+```
+vim /ext3/env.sh
+```
+7. Copy and paste
+```
+#!/bin/bash
+
+source /ext3/miniconda3/etc/profile.d/conda.sh
+export PATH=/ext3/miniconda3/bin:$PATH
+export PYTHONPATH=/ext3/miniconda3/bin:$PATH
+```
+8. Run the shell file
+```
+bash package_install.sh
+```

@@ -18,7 +18,6 @@ STORE_OVERLAY_FILE=my_env
 # Do not need change here #
 ###########################
 IMAGE_DIRECTORY=/scratch/work/public/singularity
-GITHUB_DIRECTORY=/scratch/$NetID/NYUHPC_setup
 
 # Build new file in the /scratch/<NetID>
 mkdir /scratch/$NetID/$STORE_OVERLAY_FILE
@@ -42,20 +41,4 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh Miniconda3-latest-Linux-x86_64.sh -b -p /ext3/miniconda3
 rm Miniconda3-latest-Linux-x86_64.sh
 
-# move env.sh
-# mv $GITHUB_DIRECTORY/env.sh ext3/
-# source /ext3/env.sh
-
-# # Update and install packages
-# conda update -n base conda -y
-# conda clean --all --yes
-# conda install pip
-# conda install ipykernel
-
-# # Create envrinment
-# conda create --name py39 python=3.9
-# conda activate py39
-
-# pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
-# pip3 install jupyter jupyterhub pandas matplotlib scipy scikit-learn scikit-image Pillow
 EOF
